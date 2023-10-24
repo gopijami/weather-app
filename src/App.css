@@ -1,0 +1,22 @@
+.app {
+  text-align: center;
+  background-image: url("https://res.cloudinary.com/gopi-enterprises/image/upload/v1698173070/weather3_rofyxg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  color: #0c0c0c;
+}
+
+::-webkit-scrollbar {
+  width: 0px; 
+}
+
+.weather-head{
+  font-family: Tahoma, Verdana, sans-serif,Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: 2px 3px 4px #040303, 1px 2px 4px #446c6c, 1px 2px 3px #ff4006, -1px -2px 3px #ffcd06 ;
+    color: #ffffff;
+}
