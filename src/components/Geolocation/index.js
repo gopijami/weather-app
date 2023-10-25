@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const useFetch= (url)=> {
-  const [cityData, setCityData] = useState("Hyderabad");
+  const [cityData, setCityData] = useState("");
   
     console.log(url)
    
@@ -27,6 +27,15 @@ const useFetch= (url)=> {
       console.log("gopi")
     }
   }, []);
+
+  useEffect(()=>{
+    let inter = setTimeout(()=>{
+        if(cityData === ""){
+            setCityData("Hyderabad")
+        }
+    },3000)
+    return ()=> clearTimeout(inter)
+  },[cityData])
  return [cityData]
  
 }
