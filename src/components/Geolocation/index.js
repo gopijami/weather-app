@@ -27,10 +27,6 @@ const useFetch= (url)=> {
       console.log("gopi")
     }
   }, []);
-
- 
- 
-  console.log(cityData)
  return [cityData]
  
 }
